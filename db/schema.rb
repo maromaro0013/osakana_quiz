@@ -11,6 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160317090615) do
+
+  create_table "osakanas", force: :cascade do |t|
+    t.string   "name",        limit: 64
+    t.string   "information", limit: 4096
+    t.string   "map",         limit: 4096
+    t.string   "ecology",     limit: 1024
+    t.string   "food",        limit: 1024
+    t.string   "extra",       limit: 4096
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
 end
