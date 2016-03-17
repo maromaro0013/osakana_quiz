@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
 end
 
+gem 'mechanize'
 
 gem 'react-rails'
 #gem 'react-source'

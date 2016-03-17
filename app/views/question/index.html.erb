@@ -1,1 +1,6 @@
-<%= react_component('CommentBox') %>
+<% content_for :add_css_include do %>
+	<%= stylesheet_link_tag 'question/question-app', media: 'all', 'data-turbolinks-track' => true %>
+<% end %>
+<% content_for :add_js_include do %>
+	<%= javascript_include_tag 'question/question-app', 'data-turbolinks-track' => true %>
+<% end %>
