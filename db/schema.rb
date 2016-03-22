@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322011329) do
+ActiveRecord::Schema.define(version: 20160322030345) do
 
   create_table "osakanas", force: :cascade do |t|
     t.string   "name",        limit: 64
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160322011329) do
     t.string   "extra",       limit: 4096
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.string   "url",         limit: 1024
   end
 
   add_index "osakanas", ["name"], name: "index_osakanas_on_name", unique: true, using: :btree
