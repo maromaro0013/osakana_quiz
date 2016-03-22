@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -45,7 +45,20 @@ group :development do
   gem 'spring'
 end
 
+# additional gems
 gem 'mechanize'
 
 gem 'react-rails'
 #gem 'react-source'
+
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
+gem 'passenger'
+
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+end
