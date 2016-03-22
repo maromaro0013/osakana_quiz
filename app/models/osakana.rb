@@ -29,7 +29,7 @@ class Osakana < ActiveRecord::Base
       return
     end
 
-    new_osakana = self.new(name: name)
+    new_osakana = self.new(name: name, url: resource)
 
     table = page.search("#description_view_toggle section table tbody tr")
     table.each {|elm|
